@@ -5,7 +5,14 @@ function mostrar(lista) {
         let a = document.createElement("a")
         a.className = "card"
         a.href = "warframe.html?name=" + w.nombre.toLowerCase()
-        a.innerText = w.nombre
+        let img = document.createElement("img")
+        img.src = "../img/" + w.nombre + ".png"
+        img.alt = w.nombre
+        img.style.width = "100%"
+        let nombre = document.createElement("div")
+        nombre.innerText = w.nombre
+        a.appendChild(img)
+        a.appendChild(nombre)
         contenedor.appendChild(a)
     })
 }

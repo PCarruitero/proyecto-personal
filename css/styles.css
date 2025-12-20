@@ -34,3 +34,7 @@ a {
 section {
     margin-top: 25px;
 }
+.card img {
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
