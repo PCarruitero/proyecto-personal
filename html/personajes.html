@@ -2,20 +2,18 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Warframes</title>
+    <title>Personajes | Warframe Wiki</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <img src="../img/WarframeLogo.png" class="hero-logo" alt="Warframe Logo">
-            <h1>WARFRAME WIKI</h1>
-            <p>Base de datos visual de Warframes, habilidades y estadísticas. Explora cada personaje y domina el sistema Origin.<p>
-            <button onclick="irAWarframes()">VER WARFRAMES</button>
-        </div>
+    <header class="simple-header">
+        <h1>WARFRAMES</h1>
+        <p>Selecciona un Warframe</p>
     </header>
+    <input type="text" placeholder="Buscar Warframe..." onkeyup="buscar(this.value)">
+    <div id="lista" class="grid"></div>
     <footer>
+        <section></section>
         <section id="info-footer">
             <div id="nuestrasRedes">
                 <a href="index.html"><img src="../img/Wiki.png" alt="logo"></a>
@@ -48,6 +46,7 @@
         <p>&copy; Warframe Wiki 2025. Todos los derechos reservados</p>
        </section>
     </footer>
-    <script src="../js/index.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/personaje.js"></script>
 </body>
 </html>
