@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <title>Warframe</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/waframe.css">
 </head>
 <body>
-    <a href="personajes.html">← Volver</a>
-    <h1 id="nombre"></h1>
-    <p id="descripcion"></p>
-    <section>
-        <h2>Estadísticas</h2>
-        <ul id="stats"></ul>
-    </section>
-    <section>
-        <h2>Habilidades</h2>
-        <ul id="habilidades"></ul>
+    <header class="warframe-header">
+        <div class="header-warframe-content">
+            <a href="personajes.html" class="volver-header">← Volver</a>
+            <h1 id="header-nombre">WARFRAME</h1>
+            <div class="header-line"></div>
+        </div>
+    </header>
+    <section class="warframe-detalle">
+        <div class="warframe-layout">
+            <div class="warframe-imagen">
+                <img id="img-warframe" alt="Warframe">
+            </div>
+            <div class="warframe-info">
+                <h1 id="nombre"></h1>
+                <p id="descripcion"></p>
+                <section class="bloque">
+                    <h2>Estadísticas</h2>
+                    <ul id="stats"></ul>
+                </section>
+            </div>
+        </div>
+        <section class="bloque">
+            <h2>Habilidades</h2>
+            <img id="img-habilidades" alt="Habilidades del Warframe">
+            <ul id="habilidades"></ul>
+        </section>
     </section>
     <footer>
         <section></section>
