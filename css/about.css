@@ -1,0 +1,40 @@
+.about-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+.about-section {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(56,189,248,0.1);
+}
+.about-section h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.about-section p {
+    line-height: 1.7;
+    font-size: 16px;
+    opacity: 0.9;
+}
+.tech-list {
+    list-style: none;
+    padding-left: 0;
+}
+.tech-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, rgba(56,189,248,0.15), transparent);
+    border-left: 4px solid #38bdf8;
+    border-radius: 6px;
+}
+.btn-volver {
+    display: inline-block;
+    margin-top: 40px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}

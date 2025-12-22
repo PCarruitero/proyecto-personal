@@ -2,20 +2,31 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Personajes | Warframe Wiki</title>
+    <title>Contacto | Warframe Wiki</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/personajes.css">
 </head>
 <body>
     <header class="simple-header">
-        <div class="header-content">
-            <h1>WARFRAMES</h1>
-            <p>Selecciona un Warframe</p>
-        </div>
-        <div class="header-line"></div>
+        <h1>CONTACTO</h1>
+        <p>¿Tienes sugerencias o comentarios sobre la wiki?</p>
     </header>
-    <input type="text" placeholder="Buscar Warframe..." onkeyup="buscar(this.value)">
-    <div id="lista" class="grid"></div>
+    <main class="contacto">
+        <form class="form-contacto">
+            <label>
+                Nombre
+                <input type="text" placeholder="Tu nombre">
+            </label>
+            <label>
+                Correo
+                <input type="email" placeholder="correo@ejemplo.com">
+            </label>
+            <label>
+                Mensaje
+                <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
+            </label>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </main>
     <footer>
         <section></section>
         <section id="info-footer">
@@ -51,7 +62,6 @@
         <p>&copy; Warframe Wiki 2025. Todos los derechos reservados</p>
        </section>
     </footer>
-    <script src="../js/data.js"></script>
-    <script src="../js/personaje.js"></script>
+    </footer>
 </body>
 </html>

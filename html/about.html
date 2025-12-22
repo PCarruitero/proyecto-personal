@@ -2,22 +2,43 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Personajes | Warframe Wiki</title>
+    <title>Sobre el Proyecto | Warframe Wiki</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/personajes.css">
+    <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
     <header class="simple-header">
-        <div class="header-content">
-            <h1>WARFRAMES</h1>
-            <p>Selecciona un Warframe</p>
-        </div>
-        <div class="header-line"></div>
+        <h1>SOBRE EL PROYECTO</h1>
+        <p>Warframe Wiki</p>
     </header>
-    <input type="text" placeholder="Buscar Warframe..." onkeyup="buscar(this.value)">
-    <div id="lista" class="grid"></div>
+    <main class="about-container">
+        <section class="about-section">
+            <h2>¿Qué es Warframe?</h2>
+            <p>
+                Warframe es un videojuego de acción cooperativo en tercera persona desarrollado por
+                Digital Extremes. Los jugadores controlan Warframes, exotrajes biomecánicos con
+                habilidades únicas, y exploran el sistema Origin enfrentándose a distintas facciones.
+            </p>
+        </section>
+        <section class="about-section">
+            <h2>¿Qué es Warframe Wiki?</h2>
+            <p>
+                Warframe Wiki es un proyecto web educativo que funciona como una base de datos visual
+                de Warframes. Permite explorar personajes, estadísticas y habilidades de forma clara,
+                ordenada y accesible.
+            </p>
+        </section>
+        <section class="about-section">
+            <h2>Objetivo del proyecto</h2>
+            <p>
+                El objetivo de este proyecto es aplicar conocimientos de desarrollo web
+                frontend y backend, integrando bases de datos y buenas prácticas de diseño,
+                creando una aplicación funcional inspirada en un videojuego real.
+            </p>
+        </section>
+        <a href="index.html" class="btn-volver">← Volver al inicio</a>
+    </main>
     <footer>
-        <section></section>
         <section id="info-footer">
             <div id="nuestrasRedes">
                 <a href="index.html"><img src="../img/Wiki.png" alt="logo"></a>
@@ -51,7 +72,5 @@
         <p>&copy; Warframe Wiki 2025. Todos los derechos reservados</p>
        </section>
     </footer>
-    <script src="../js/data.js"></script>
-    <script src="../js/personaje.js"></script>
 </body>
 </html>
