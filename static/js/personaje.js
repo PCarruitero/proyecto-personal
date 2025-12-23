@@ -6,7 +6,7 @@ function mostrar(lista) {
         a.className = "card"
         a.href = "warframe.html?name=" + w.nombre.toLowerCase()
         let img = document.createElement("img")
-        img.src = "../img/" + w.nombre + ".png"
+        img.src = "../static/img/" + w.nombre + ".png"
         img.alt = w.nombre
         let nombre = document.createElement("div")
         nombre.innerText = w.nombre

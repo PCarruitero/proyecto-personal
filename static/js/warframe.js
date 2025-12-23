@@ -6,9 +6,9 @@ if (w) {
     document.getElementById("nombre").innerText = w.nombre
     document.getElementById("descripcion").innerText = w.descripcion
     document.getElementById("img-warframe").src =
-        "../img/" + w.nombre + ".png"
+        "../static/img/" + w.nombre + ".png"
     document.getElementById("img-habilidades").src =
-        "../img/" + w.nombre + "Habilidades.png"
+        "../static/img/" + w.nombre + "Habilidades.png"
     let stats = document.getElementById("stats")
     stats.innerHTML = ""
     for (let k in w.estadisticas) {

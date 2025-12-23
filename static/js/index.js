@@ -1,3 +1,3 @@
 function irAWarframes() {
-    window.location.href = "personajes"
+    window.location.href = "personajes.html"
 }
