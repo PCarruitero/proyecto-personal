@@ -1,6 +1,21 @@
 from flask import Flask, request, jsonify
 import sqlite3
 app = Flask(__name__)
+@app.route("/")
+def index():
+    return render_template("index.html")
+@app.route("/personajes")
+def personajes():
+    return render_template("personajes.html")
+@app.route("/warframe")
+def warframe():
+    return render_template("warframe.html")
+@app.route("/about")
+def about():
+    return render_template("about.html")
+@app.route("/contacto")
+def contacto():
+    return render_template("contacto.html")
 def conectar_db():
     return sqlite3.connect("database.db")
 @app.route("/contacto", methods=["POST"])
