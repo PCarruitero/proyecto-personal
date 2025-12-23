@@ -13,9 +13,6 @@ def warframe():
 @app.route("/about")
 def about():
     return render_template("about.html")
-@app.route("/contacto")
-def contacto():
-    return render_template("contacto.html")
 def conectar_db():
     return sqlite3.connect("database.db")
 @app.route("/contacto", methods=["POST"])
