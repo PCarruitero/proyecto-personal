@@ -1,8 +1,25 @@
 from flask import Flask, request, jsonify, render_template
 import sqlite3
+import os
 app = Flask(__name__)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "database.db")
 def conectar_db():
-    return sqlite3.connect("database.db")
+    return sqlite3.connect(DB_PATH)
+def crear_tabla():
+    conn = conectar_db()
+    cursor = conn.cursor()
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS mensajes (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        nombre TEXT NOT NULL,
+        email TEXT NOT NULL,
+        mensaje TEXT NOT NULL
+    )
+    """)
+    conn.commit()
+    conn.close()
+crear_tabla()
 @app.route("/")
 def index():
     return render_template("index.html")
