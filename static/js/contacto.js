@@ -7,7 +7,7 @@ document.querySelector(".form-contacto").addEventListener("submit", function (e)
         alert("Todos los campos son obligatorios")
         return
     }
-    fetch("http://127.0.0.1:5000/contacto", {
+    fetch("/contacto", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -23,8 +23,10 @@ document.querySelector(".form-contacto").addEventListener("submit", function (e)
         if (data.success) {
             alert("Mensaje enviado correctamente")
             document.querySelector(".form-contacto").reset()
+        } else if (data.error) {
+            alert(data.error)
         } else {
-            alert("Error al enviar el mensaje")
+            alert("Error desconocido")
         }
     })
     .catch(() => {

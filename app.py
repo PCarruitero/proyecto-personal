@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify, render_template
 import sqlite3
 app = Flask(__name__)
+def conectar_db():
+    return sqlite3.connect("database.db")
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -13,11 +15,13 @@ def warframe():
 @app.route("/about")
 def about():
     return render_template("about.html")
-def conectar_db():
-    return sqlite3.connect("database.db")
-@app.route("/contacto", methods=["POST"])
+@app.route("/contacto", methods=["GET", "POST"])
 def contacto():
+    if request.method == "GET":
+        return render_template("contacto.html")
     data = request.json
+    if not data:
+        return jsonify({"error": "Datos no recibidos"}), 400
     nombre = data.get("nombre", "").strip()
     email = data.get("email", "").strip()
     mensaje = data.get("mensaje", "").strip()
