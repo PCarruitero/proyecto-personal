@@ -4,7 +4,7 @@ function mostrar(lista) {
     lista.forEach(w => {
         let a = document.createElement("a")
         a.className = "card"
-        a.href = "warframe.html?name=" + w.nombre.toLowerCase()
+        a.href = "warframe?name=" + w.nombre.toLowerCase()
         let img = document.createElement("img")
         img.src = "../static/img/" + w.nombre + ".png"
         img.alt = w.nombre
