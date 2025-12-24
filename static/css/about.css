@@ -1,8 +1,10 @@
+/* Contenedor principal */
 .about-container {
     max-width: 900px;
     margin: 60px auto;
     padding: 0 20px;
 }
+/* Caja de cada sección */
 .about-section {
     margin-bottom: 50px;
     padding: 30px;
@@ -10,20 +12,24 @@
     border-radius: 14px;
     box-shadow: 0 0 20px rgba(56,189,248,0.1);
 }
+/* Títulos de las secciones */
 .about-section h2 {
     color: #38bdf8;
     margin-bottom: 15px;
     font-size: 24px;
 }
+/* Texto de las secciones */
 .about-section p {
     line-height: 1.7;
     font-size: 16px;
     opacity: 0.9;
 }
+/* Lista de tecnologías */
 .tech-list {
     list-style: none;
     padding-left: 0;
 }
+/* Elementos de la lista */
 .tech-list li {
     padding: 10px;
     margin-bottom: 10px;
@@ -31,6 +37,7 @@
     border-left: 4px solid #38bdf8;
     border-radius: 6px;
 }
+/* Botón volver */
 .btn-volver {
     display: inline-block;
     margin-top: 40px;

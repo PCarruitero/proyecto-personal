@@ -1,3 +1,4 @@
+/* Estilo del input de texto */
 input[type="text"] {
     display: block;
     width: 100%;
@@ -16,6 +17,7 @@ input[type="text"] {
         box-shadow 0.25s ease,
         transform 0.2s ease;
 }
+/* Estilo cuando el input está activo */
 input[type="text"]:focus {
     border-color: #38bdf8;
     box-shadow: 
@@ -23,10 +25,12 @@ input[type="text"]:focus {
         inset 0 0 10px rgba(0,0,0,0.6);
     transform: scale(1.02);
 }
+/* Estilo del texto placeholder */
 input[type="text"]::placeholder {
     color: rgba(186,230,253,0.55);
     letter-spacing: 1px;
 }
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 600px) {
     input[type="text"] {
         max-width: 90%;

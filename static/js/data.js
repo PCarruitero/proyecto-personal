@@ -1,3 +1,4 @@
+/* Descripción, estadísticas y habilidades de cada warframe */
 let warframes = [
 {nombre:"Ash",descripcion:"Asesino sigiloso.",estadisticas:{salud:450,escudos:300,armadura:150,energia:100},habilidades:["Shuriken","Smoke Screen","Teleport","Blade Storm"]},
 {nombre:"Atlas",descripcion:"Controla la tierra.",estadisticas:{salud:450,escudos:300,armadura:450,energia:100},habilidades:["Landslide","Tectonics","Petrify","Rumblers"]},

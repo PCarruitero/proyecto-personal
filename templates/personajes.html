@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Metadatos y estilos -->
     <meta charset="UTF-8">
     <title>Personajes | Warframe Wiki</title>
     <link rel="stylesheet" href="../static/css/styles.css">
     <link rel="stylesheet" href="../static/css/personajes.css">
 </head>
 <body>
+    <!-- Encabezado -->
     <header class="simple-header">
         <div class="header-content">
             <h1>WARFRAMES</h1>
@@ -14,44 +16,54 @@
         </div>
         <div class="header-line"></div>
     </header>
+    <!-- Buscador -->
     <input type="text" placeholder="Buscar Warframe..." onkeyup="buscar(this.value)">
+    <!-- Lista de Warframes -->
     <div id="lista" class="grid"></div>
+    <!-- Footer -->
     <footer>
+        <!-- Separador -->
         <section></section>
+        <!-- Información del footer -->
         <section id="info-footer">
+            <!-- Redes sociales -->
             <div id="nuestrasRedes">
                 <a href="index"><img src="../static/img/Wiki.png" alt="logo"></a>
                 <h4>REDES DE WARFRAME</h4>
-                    <ul>
-                        <li><a href="https://www.facebook.com/PlayWarframe" target="_blank"><img src="../static/img/Facebook.webp" alt="FB"></a></li>
-                        <li><a href="https://www.tiktok.com/@playwarframe" target="_blank"><img src="../static/img/Tiktok.png" alt="TK"></a></li>
-                        <li><a href="https://x.com/PlayWarframe" target="_blank"><img src="../static/img/X.png" alt="X"></a></li>
-                    </ul>
+                <ul>
+                    <li><a href="https://www.facebook.com/PlayWarframe" target="_blank"><img src="../static/img/Facebook.webp" alt="FB"></a></li>
+                    <li><a href="https://www.tiktok.com/@playwarframe" target="_blank"><img src="../static/img/Tiktok.png" alt="TK"></a></li>
+                    <li><a href="https://x.com/PlayWarframe" target="_blank"><img src="../static/img/X.png" alt="X"></a></li>
+                </ul>
             </div>
+            <!-- Enlaces Warframe -->
             <div class="contenido-ft">
                 <h4>SOBRE WARFRAME</h4>
-                    <ul>
-                        <li><a href="about">Sobre el proyecto</a></li>
-                        <li><a href="https://www.warframe.com/es/the-old-peace">Novedades</a></li>
-                        <li><a href="https://www.warframe.com/es/patch-notes">Notas de actualizacion</a></li>
-                        <li><a href="https://www.warframe.com/es/buyplatinum">Platinum & Paquetes</a></li>
-                        <li><a href="https://www.warframe.com/es/prime-access">Prime Access</a></li>
-                        <li><a href="https://www.warframe.com/es/promocode">Canjear códigos</a></li>
-                        <li><a href="contacto">Contacto</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="about">Sobre el proyecto</a></li>
+                    <li><a href="https://www.warframe.com/es/the-old-peace">Novedades</a></li>
+                    <li><a href="https://www.warframe.com/es/patch-notes">Notas de actualización</a></li>
+                    <li><a href="https://www.warframe.com/es/buyplatinum">Platinum & Paquetes</a></li>
+                    <li><a href="https://www.warframe.com/es/prime-access">Prime Access</a></li>
+                    <li><a href="https://www.warframe.com/es/promocode">Canjear códigos</a></li>
+                    <li><a href="contacto">Contacto</a></li>
+                </ul>
             </div>
+            <!-- Enlaces de cuenta -->
             <div class="contenido-ft">
                 <h4>MI CUENTA</h4>
-                    <ul>
-                        <li><a href="https://www.warframe.com/es/login">Ingresar</a></li>
-                        <li><a href="https://www.warframe.com/es/signup">Crear Cuenta</a></li>      
-                    </ul>
+                <ul>
+                    <li><a href="https://www.warframe.com/es/login">Ingresar</a></li>
+                    <li><a href="https://www.warframe.com/es/signup">Crear Cuenta</a></li>      
+                </ul>
             </div>
         </section>
+        <!-- Footer final -->
         <section id="final-footer">
-        <p>&copy; Warframe Wiki 2025. Todos los derechos reservados</p>
-       </section>
+            <p>&copy; Warframe Wiki 2025. Todos los derechos reservados</p>
+        </section>
     </footer>
+    <!-- Scripts -->
     <script src="../static/js/data.js"></script>
     <script src="../static/js/personaje.js"></script>
 </body>

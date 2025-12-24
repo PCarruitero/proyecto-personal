@@ -1,6 +1,8 @@
+/* Contenedor donde se mostrarán las tarjetas */
 let contenedor = document.getElementById("lista")
+/* Muestra la lista de warframes en pantalla */
 function mostrar(lista) {
-    contenedor.innerHTML = ""
+    contenedor.innerHTML = "" // Limpia el contenedor
     lista.forEach(w => {
         let a = document.createElement("a")
         a.className = "card"
@@ -15,10 +17,12 @@ function mostrar(lista) {
         contenedor.appendChild(a)
     })
 }
+/* Filtra la lista según el texto buscado */
 function buscar(texto) {
     let filtrados = warframes.filter(w =>
         w.nombre.toLowerCase().includes(texto.toLowerCase())
     )
     mostrar(filtrados)
 }
+/* Muestra todos al cargar */
 mostrar(warframes)

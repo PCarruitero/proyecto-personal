@@ -1,8 +1,10 @@
+/* Contenedor principal del detalle */
 .warframe-detalle {
     max-width: 1200px;
     margin: 80px auto;
     padding: 0 20px;
 }
+/* Enlace para volver */
 .volver {
     display: inline-block;
     margin: 20px 30px;
@@ -10,15 +12,18 @@
     color: #38bdf8;
     transition: opacity 0.2s;
 }
+/* Hover del enlace volver */
 .volver:hover {
     opacity: 0.7;
 }
+/* Layout principal en dos columnas */
 .warframe-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
 }
+/* Imagen del warframe */
 .warframe-imagen img {
     width: 100%;
     max-width: 420px;
@@ -26,6 +31,7 @@
     margin: 0 auto;
     filter: drop-shadow(0 30px 50px rgba(0,0,0,0.7));
 }
+/* Título del warframe */
 .warframe-info h1 {
     font-size: 42px;
     color: #38bdf8;
@@ -33,6 +39,7 @@
     margin-bottom: 10px;
     text-align: center;
 }
+/* Descripción del warframe */
 .warframe-info p {
     font-size: 15px;
     opacity: 0.85;
@@ -40,18 +47,21 @@
     margin-bottom: 30px;
     text-align: center;
 }
+/* Bloques de contenido */
 .bloque {
     margin-top: 60px;
     padding-top: 30px;
     border-top: 1px solid rgba(255,255,255,0.08);
     text-align: center;
 }
+/* Títulos de los bloques */
 .bloque h2 {
     font-size: 26px;
     color: #38bdf8;
     letter-spacing: 1px;
     margin-bottom: 25px;
 }
+/* Lista de estadísticas */
 #stats {
     list-style: none;
     padding: 25px;
@@ -61,20 +71,17 @@
     max-width: 420px;
     margin: 0 auto;
 }
+/* Ítems de estadísticas */
 #stats li {
     margin-bottom: 14px;
     padding: 12px 16px;
-    background: linear-gradient(
-        90deg,
-        rgba(56,189,248,0.25),
-        rgba(56,189,248,0.05),
-        transparent
-    );
+    background: linear-gradient(90deg, rgba(56,189,248,0.25), rgba(56,189,248,0.05), transparent);
     border-left: 4px solid #38bdf8;
     border-radius: 8px;
     font-size: 16px;
     text-align: left;
 }
+/* Imagen de habilidades */
 #img-habilidades {
     width: 100%;
     max-width: 650px;
@@ -83,54 +90,51 @@
     border-radius: 16px;
     padding: 10px;
     background: rgba(0,0,0,0.35);
-    box-shadow:
-        0 0 40px rgba(56,189,248,0.25),
-        inset 0 0 25px rgba(0,0,0,0.8);
+    box-shadow: 0 0 40px rgba(56,189,248,0.25), inset 0 0 25px rgba(0,0,0,0.8);
 }
+/* Lista de habilidades */
 #habilidades {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 20px;
-    flex-wrap: nowrap;
     margin-top: 30px;
     list-style: none;
     padding: 0;
 }
+/* Ítems de habilidades */
 #habilidades li {
     padding: 14px 22px;
     background: rgba(255,255,255,0.05);
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.12);
     font-size: 14px;
-    letter-spacing: 0.5px;
     transition: transform 0.25s, box-shadow 0.25s;
 }
+/* Hover habilidades */
 #habilidades li:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(56,189,248,0.35);
 }
+/* Responsive tablet */
 @media (max-width: 900px) {
     .warframe-layout {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    .warframe-info h1,
-    .warframe-info p {
-        text-align: center;
-    }
 }
+/* Scroll horizontal en móvil */
 @media (max-width: 600px) {
     #habilidades {
         overflow-x: auto;
         padding-bottom: 10px;
     }
 }
+/* Header del warframe */
 .warframe-header {
     background: linear-gradient(135deg, #050b1a, #0a1a33);
     padding: 30px 40px;
-    position: relative;
 }
+/* Contenido del header */
 .header-warframe-content {
     max-width: 1400px;
     margin: auto;
@@ -138,21 +142,24 @@
     flex-direction: column;
     gap: 12px;
 }
+/* Enlace volver en header */
 .volver-header {
     color: #4da3ff;
     text-decoration: none;
     font-size: 15px;
-    width: fit-content;
 }
+/* Hover volver header */
 .volver-header:hover {
     text-decoration: underline;
 }
+/* Título del header */
 .warframe-header h1 {
     margin: 0;
     font-size: 36px;
     letter-spacing: 3px;
     color: #ffffff;
 }
+/* Línea decorativa header */
 .header-line {
     width: 140px;
     height: 3px;
